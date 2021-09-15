@@ -1,15 +1,31 @@
-/*
-1. Create a `Calculator` class.
-2. A newly instantiated instance should have its `total` property initialized to
-   `0`.
-3. Add the following instance methods which should all return the `total`
-   property of the instance:
-   a. `add(num)` - add the `num` arg to the `total`
-   b. `subtract(num)` - subtract the `num` arg from the `total`
-   c. `divide(num)` - divide the `total` by the `num` arg
-   d. `multiply(num)` - multiply the `total` by the `num` arg
-*/
-console.log(this);
+// Your code here
+
+class Calculator {
+	constructor () {
+		this.total = 0;
+	}
+
+	add(num) {
+		this.total += num;
+		return this.total;
+	}
+
+	subtract(num) {
+		this.total -= num;
+		return this.total;
+	}
+
+	divide(num) {
+		this.total /= num;
+		return this.total;
+	}
+
+	multiply(num) {
+		this.total *= num;
+		return this.total;
+	}
+}
+
 /*****************************************************************************/
 /***************** DO NOT MODIFY ANYTHING UNDER THIS LINE ********************/
 
